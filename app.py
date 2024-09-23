@@ -49,7 +49,7 @@ def generate_story():
                              repetition_penalty=1.2 ) # Penalize repeating the same word.)
 
     # Decode the generated tokens into text
-    story = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    story = tokenizer.decode(outputs[0], skip_special_tokens=True,clean_up_tokenization_spaces=True)
 
     # Post-process the story to remove repetitive phrases (optional step)
     story = remove_repetitive_sentences(story)
