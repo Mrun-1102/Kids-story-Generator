@@ -1,6 +1,9 @@
 from flask import Flask, render_template, request
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 import torch
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning, module="transformers.tokenization_utils_base")
+
 
 app = Flask(__name__)
 
