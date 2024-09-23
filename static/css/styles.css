@@ -1,0 +1,19 @@
+body {
+    background-color: #f9f9f9;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+
+.btn-primary {
+    background-color: #ffab00;
+    border-color: #ffab00;
+}
+
+.alert-success {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #c0c0c0;
+}
