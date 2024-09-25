@@ -42,9 +42,25 @@ To use this app, follow these steps:
     [Go to the](https://kids-story-generator.onrender.com)
     Input the desired keywords for generating the story.
     Click "Generate Story" and enjoy the custom story!
-    
-## Tech Stack
 
+## Screenshots
+![intro](https://github.com/user-attachments/assets/3724ed75-7450-479b-8945-88c6396a6d2b)
+
+
+    
+
+![inputs](https://github.com/user-attachments/assets/ffb38e1e-7d2a-4671-b59a-97a91d1bc13b)
+
+
+
+
+
+![story generate](https://github.com/user-attachments/assets/fd36f01a-39e5-401e-b477-557b038cd0d1)
+
+
+
+
+## Tech Stack
 Flask
 
 OpenAI GPT-2
