@@ -46,7 +46,7 @@ def generate_story():
     outputs = model.generate(inputs, 
                              max_length=100, 
                              num_return_sequences=1, 
-                            #  attention_mask=inputs["attention_mask"],
+                             attention_mask=inputs["attention_mask"],
                              pad_token_id=tokenizer.eos_token_id,
                              temperature=0.7,  # Controls randomness. Lower values make output more focused.
                              top_p=0.9,  # Controls diversity via nucleus sampling.
