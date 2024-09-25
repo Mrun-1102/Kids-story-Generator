@@ -41,12 +41,14 @@ def generate_story():
     
     # Tokenize the input prompt
     inputs = tokenizer.encode(prompt, return_tensors="pt")
+ 
+    # Generate attention mask
+    attention_mask = (inputs != tokenizer.pad_token_id).long()
 
     # Generate the story using GPT-2
     outputs = model.generate(inputs, 
-                             max_length=100, 
-                             num_return_sequences=1, 
-                            #  attention_mask=inputs["attention_mask"],
+                             max_length=70, 
+                             num_return_sequences=1,                             
                              pad_token_id=tokenizer.eos_token_id,
                              temperature=0.7,  # Controls randomness. Lower values make output more focused.
                              top_p=0.9,  # Controls diversity via nucleus sampling.
